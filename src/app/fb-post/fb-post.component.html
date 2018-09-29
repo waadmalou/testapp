@@ -1,0 +1,39 @@
+<!-- HEADER AND TODO COUNT -->
+<div class="jumbotron text-center">
+  <h1>FACEBOOK POST<span class="label label-meteo"></span></h1>
+</div>
+
+<!-- FORM TO CREATE TODOS -->
+<div id="todo-form" class="row">
+  <div class="col-sm-12 text-center">
+      <form  novalidate name ="ngForm"  #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
+          <div class="form-group">
+              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+              <input type="text" class="form-control input-lg text-center" placeholder="past your facebook app access token here" name="page_access_token" [(ngModel)]="page_access_token" [ngModelOptions]="{updateOn: 'blur'}" required>
+          </div>
+          <div class="form-group">
+              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+              <input type="text" class="form-control input-lg text-center" placeholder="past your facebook post url here" name="post_url" [(ngModel)]="post_url" [ngModelOptions]="{updateOn: 'blur'}" required>
+          </div>
+          <div class="form-group">
+              <!-- createToDo() WILL CREATE NEW TODOS -->
+              <button type="submit" class="btn btn-primary btn-lg" >Get Winner</button>
+          </div>
+
+          <div class="winner-element"  [hidden]="submitted">   
+              <div *ngIf="winner" class="alert alert-success alert-dismissible">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  And the winner is ... <strong> {{winner}} </strong>
+              </div>
+
+              <div *ngIf="!winner" class="alert alert-danger alert-dismissible">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <strong>Oops!</strong> Make sure you have the wirght url and access token!
+              </div>
+          </div>
+
+      </form>
+
+  </div>
+</div>
+
