@@ -171,7 +171,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- HEADER AND TODO COUNT -->\n<div class=\"jumbotron text-center\">\n  <h1>FACEBOOK POST<span class=\"label label-meteo\"></span></h1>\n</div>\n\n<!-- FORM TO CREATE TODOS -->\n<div id=\"todo-form\" class=\"row\">\n  <div class=\"col-sm-12 text-center\">\n      <form  novalidate name =\"ngForm\"  #formRef=\"ngForm\" (ngSubmit)=\"onSubmit(formRef.value)\">\n          <div class=\"form-group\">\n              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n              <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your facebook app access token here\" name=\"page_access_token\" [(ngModel)]=\"page_access_token\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n          </div>\n          <div class=\"form-group\">\n              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n              <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your facebook post url here\" name=\"post_url\" [(ngModel)]=\"post_url\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n          </div>\n          <div class=\"form-group\">\n              <!-- createToDo() WILL CREATE NEW TODOS -->\n              <button type=\"submit\" class=\"btn btn-primary btn-lg\" >Get Winner</button>\n          </div>\n\n          <div class=\"winner-element\"  [hidden]=\"submitted\">   \n              <div *ngIf=\"winner\" class=\"alert alert-success alert-dismissible\">\n                  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                  And the winner is ... <strong> {{winner}} </strong>\n              </div>\n\n              <div *ngIf=\"!winner\" class=\"alert alert-danger alert-dismissible\">\n                  <a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                  <strong>Oops!</strong> Make sure you have the wirght url and access token!\n              </div>\n          </div>\n\n      </form>\n\n  </div>\n</div>\n\n"
+module.exports = "<!-- HEADER AND TODO COUNT -->\n<div class=\"jumbotron text-center\">\n  <h1>FACEBOOK POST<span class=\"label label-meteo\"></span></h1>\n</div>\n\n<!-- FORM TO CREATE TODOS -->\n<div id=\"todo-form\" class=\"row\">\n  <div class=\"col-sm-12 text-center\">\n      <form  novalidate name =\"ngForm\"  #formRef=\"ngForm\" (ngSubmit)=\"onSubmit(formRef.value)\">\n          <div class=\"form-group\">\n              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n              <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your facebook app access token here\" name=\"page_access_token\" [(ngModel)]=\"page_access_token\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n          </div>\n          <div class=\"form-group\">\n              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n              <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your facebook post url here\" name=\"post_url\" [(ngModel)]=\"post_url\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n          </div>\n          <div class=\"form-group\">\n              <!-- createToDo() WILL CREATE NEW TODOS -->\n              <button type=\"submit\" class=\"btn btn-primary btn-lg\" >Get Winner</button>\n          </div>\n\n          <div class=\"winner-element\"  [hidden]=\"submitted\">   \n              <div *ngIf=\"winner\" class=\"alert alert-success alert-dismissible\">\n                  <a class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                  And the winner is ... <strong> {{winner}} </strong>\n              </div>\n\n              <div *ngIf=\"!winner\" class=\"alert alert-danger alert-dismissible\">\n                  <a class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                  <strong>Oops!</strong> Make sure you have the right url and access token!\n              </div>\n          </div>\n\n      </form>\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -280,7 +280,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- HEADER AND TODO COUNT -->\n<div class=\"jumbotron text-center\">\n  <h1>INSTAGRAM POST<span class=\"label label-meteo\"></span></h1>\n</div>\n\n<!-- FORM TO CREATE TODOS -->\n<div id=\"todo-form\" class=\"row\">\n  <div class=\"col-sm-8 col-sm-offset-2 text-center\">\n      <form  novalidate #formRef=\"ngForm\" (ngSubmit)=\"onSubmit(formRef.value)\">\n          <div class=\"form-group\">\n              <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n              <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past instagram link here\" name=\"cityName\" [(ngModel)]=\"cityName\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n          </div>\n          <div class=\"form-group\">\n              <!-- createToDo() WILL CREATE NEW TODOS -->\n              <button type=\"submit\" class=\"btn btn-primary btn-lg\" >Get Winner</button>\n          </div>\n      </form>\n\n  </div>\n</div>\n"
+module.exports = "<!-- HEADER AND TODO COUNT -->\n<div class=\"jumbotron text-center\">\n        <h1>INSTAGRAM POST<span class=\"label label-meteo\"></span></h1>\n      </div>\n      \n      <!-- FORM TO CREATE TODOS -->\n      <div id=\"todo-form\" class=\"row\">\n        <div class=\"col-sm-12 text-center\">\n            <form  novalidate name =\"ngForm\"  #formRef=\"ngForm\" (ngSubmit)=\"onSubmit(formRef.value)\">\n                <div class=\"form-group\">\n                    <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n                    <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your facebook app access token here\" name=\"page_access_token\" [(ngModel)]=\"page_access_token\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n                </div>\n                <div class=\"form-group\">\n                    <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->\n                    <input type=\"text\" class=\"form-control input-lg text-center\" placeholder=\"past your instagram post url here\" name=\"post_url\" [(ngModel)]=\"post_url\" [ngModelOptions]=\"{updateOn: 'blur'}\" required>\n                </div>\n                <div class=\"form-group\">\n                    <!-- createToDo() WILL CREATE NEW TODOS -->\n                    <button type=\"submit\" class=\"btn btn-primary btn-lg\" >Get Winner</button>\n                </div>\n      \n                <div class=\"winner-element\"  [hidden]=\"submitted\">   \n                    <div *ngIf=\"winner\" class=\"alert alert-success alert-dismissible\">\n                        <a class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                        And the winner is ... <strong> {{winner}} </strong>\n                    </div>\n      \n                    <div *ngIf=\"!winner\" class=\"alert alert-danger alert-dismissible\">\n                        <a class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>\n                        <strong>Oops!</strong> Make sure you have the right url and access token!\n                    </div>\n                </div>\n      \n            </form>\n      \n        </div>\n      </div>\n      \n      "
 
 /***/ }),
 
@@ -295,6 +295,9 @@ module.exports = "<!-- HEADER AND TODO COUNT -->\n<div class=\"jumbotron text-ce
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IgPostComponent", function() { return IgPostComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _services_fb_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/fb.service */ "./src/app/services/fb.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -305,10 +308,78 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var IgPostComponent = /** @class */ (function () {
-    function IgPostComponent() {
+    function IgPostComponent(http, router, _fb) {
+        this.http = http;
+        this.router = router;
+        this._fb = _fb;
+        this.submitted = true;
     }
     IgPostComponent.prototype.ngOnInit = function () {
+    };
+    IgPostComponent.prototype.onSubmit = function (formValue) {
+        var _this = this;
+        var pathArray = formValue.post_url.split('/');
+        var short_code = pathArray[4];
+        this.getIGpageid(formValue.page_access_token)
+            .then(function (data) {
+            _this.ig_page_id = data.instagram_business_account.id;
+            console.log(_this.ig_page_id);
+            _this.GetCommentators(formValue.page_access_token, _this.ig_page_id)
+                .then(function (data) {
+                _this.comments = data;
+                console.log(_this.comments);
+                _this.winner = _this.GetWinner(short_code, _this.comments);
+                _this.submitted = false;
+            });
+        });
+    };
+    IgPostComponent.prototype.getIGpageid = function (page_access_token) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this._fb.getIGpageid(page_access_token)
+                .subscribe(function (result) {
+                resolve(result);
+            }, function (error) {
+                _this.submitted = false;
+                _this.winner = null;
+            });
+        });
+    };
+    IgPostComponent.prototype.GetCommentators = function (page_access_token, ig_page_id) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            _this._fb.getIGcomments(ig_page_id, page_access_token)
+                .subscribe(function (result) {
+                resolve(result);
+            }, function (error) {
+                _this.submitted = false;
+                _this.winner = null;
+            });
+        });
+    };
+    IgPostComponent.prototype.GetWinner = function (short_code, comments) {
+        var i = 0;
+        var people = [];
+        var winner;
+        console.log("waad");
+        console.log(comments.media.data[0].shortcode);
+        comments.media.data.every(function (element, index) {
+            var stop = (element.shortcode == short_code);
+            if (stop) {
+                element.comments.data.forEach(function (element) {
+                    people[i] = element.username;
+                    i++;
+                });
+            }
+            return (!stop);
+        });
+        winner = people[Math.floor(Math.random() * people.length)];
+        console.log(winner);
+        return winner;
     };
     IgPostComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -316,7 +387,7 @@ var IgPostComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./ig-post.component.html */ "./src/app/ig-post/ig-post.component.html"),
             styles: [__webpack_require__(/*! ./ig-post.component.css */ "./src/app/ig-post/ig-post.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _services_fb_service__WEBPACK_IMPORTED_MODULE_3__["FbService"]])
     ], IgPostComponent);
     return IgPostComponent;
 }());
@@ -356,7 +427,13 @@ var FbService = /** @class */ (function () {
       return this.http.get('/meteo');
     }*/
     FbService.prototype.getPostComments = function (post_id, page_access_token) {
-        return this.http.get('/api/comments/' + post_id + '/' + page_access_token);
+        return this.http.get('/api/fb/comments/' + post_id + '/' + page_access_token);
+    };
+    FbService.prototype.getIGpageid = function (page_access_token) {
+        return this.http.get('/api/ig/ig_page_id/' + page_access_token);
+    };
+    FbService.prototype.getIGcomments = function (ig_page_id, page_access_token) {
+        return this.http.get('/api/ig/comments/' + ig_page_id + '/' + page_access_token);
     };
     FbService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({

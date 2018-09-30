@@ -15,9 +15,16 @@ export class FbService {
  }*/
 
  getPostComments(post_id,page_access_token) {
-   return this.http.get('/api/comments/'+post_id+'/'+page_access_token);
+   return this.http.get('/api/fb/comments/'+post_id+'/'+page_access_token);
  }
 
+ getIGpageid(page_access_token) {
+  return this.http.get('/api/ig/ig_page_id/'+page_access_token);
+}
+
+getIGcomments(ig_page_id,page_access_token) {
+  return this.http.get('/api/ig/comments/'+ig_page_id+'/'+page_access_token);
+}
  /*saveMeteo(data) {
    return this.http.post('/meteo', data);
  }*/

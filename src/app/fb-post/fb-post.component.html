@@ -22,13 +22,13 @@
 
           <div class="winner-element"  [hidden]="submitted">   
               <div *ngIf="winner" class="alert alert-success alert-dismissible">
-                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
                   And the winner is ... <strong> {{winner}} </strong>
               </div>
 
               <div *ngIf="!winner" class="alert alert-danger alert-dismissible">
-                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                  <strong>Oops!</strong> Make sure you have the wirght url and access token!
+                  <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <strong>Oops!</strong> Make sure you have the right url and access token!
               </div>
           </div>
 
